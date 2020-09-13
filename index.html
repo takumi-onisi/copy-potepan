@@ -5,54 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ポテパンキャンプ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <div id="top"></div>
     <section id="top_hero">
-        <header id="header">
-            <div class="container">
-                <h1>
+        <header id="header" class="header">
+            <div class="container header__container">
+                <h1 id="top_logo__wrapper" class="top_logo__wrapper">
                     <a href="/">
-                        <img id="logo" src="images/header-logo.png" alt="POTEPAN CAMP">
+                        <img id="top_logo" src="images/header-logo.png" alt="POTEPAN CAMP">
                     </a>
                 </h1>
-                <nav id="site_nav">
-                    <ul>
-                        <li><a href="">ABOUT<br>初めての方へ</a></li>
-                        <li><a href="">FLOW<br>卒業までの流れ</a></li>
-                        <li><a href="">COURSE<br>コース・料金</a></li>
-                        <li><a href="">INTERVIEW<br>受講者の声</a></li>
-                        <li><a href="">FAQ<br>良くある質問</a></li>
-                        <li><a href="">COMPANY<br>会社概要</a></li>
-                        <li><a class="button_link" href="">無料カウンセリング</a></li>
+                <nav id="global_nav" class="global_nav">
+                    <ul class="global_nav__list">
+                        <li><a href="">ABOUT<br><span class="global_nav__text--small">初めての方へ</span></a></li>
+                        <li><a href="">FLOW<br><span class="global_nav__text--small">卒業までの流れ</span></a></li>
+                        <li><a href="">COURSE<br><span class="global_nav__text--small">コース・料金</span></a></li>
+                        <li><a href="">INTERVIEW<br><span class="global_nav__text--small">受講者の声</span></a></li>
+                        <li><a href="">FAQ<br><span class="global_nav__text--small">良くある質問</span></a></li>
+                        <li><a href="">COMPANY<br><span class="global_nav__text--small">会社概要</span></a></li>
+                        <li>
+                            <div class="highlight_link__wrapper">
+                                <a class="highlight_link__item" href="">無料カウンセリング</a>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
             </div>
 
         </header>
 
-        <section>
-            <div class="container">
-                <img src="images/badge-number1.svg" alt="プログラミングスクールでWebエンジニア輩出ナンバーワン">
-                <p>
+        <div class="container padding--none top_hero__lead_wrapper">
+
+            <div id="top_hero__lead" class="top_hero__container flex_container">
+                <img class="flex_item" id="badge_number1" class="badge_number1" src="images/badge-number1.svg"
+                    alt="プログラミングスクールでWebエンジニア輩出ナンバーワン">
+
+                <div class="wrapper flex_item">
+                    <p>
+                        <img id="top_hero_logo" src="images/top-hero-logo.png">
+                    </p>
+                    <p>
+                        本気でWebエンジニアを目指すなら、<br>
+                        本気のプログラミング学習。
+                    </p>
+                    <p class="highlight_link__wrapper">
+                        <a class="highlight_link__item" href="">無料カウンセリング</a>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="top_hero__container annotation__wrapper">
+                <p class="annotation__item">
                     ※ショッパーズアイ「プログラミングスクール10社を対象にした
                     サイト比較イメージ調査（2020 年 5 月 22 日～25 日）」より
                     全国の22～49歳の男女691名へのインターネット調査
                 </p>
-                <p>
-                    <img id="top_hero_logo" src="images/top-hero-logo.png">
-                </p>
-                <p>
-                    本気でWebエンジニアを目指すなら、<br>
-                    本気のプログラミング学習。
-                </p>
-                <p>
-                    <a class="button_link" href="">無料カウンセリング</a>
-                </p>
             </div>
+        </div>
 
-        </section>
 
 
     </section>
@@ -62,58 +77,94 @@
 
         <section id="about">
             <div class="container">
-                <h1>POTEPAN CAMPとは</h1>
-                <p>
-                    卒業生の多くがWebエンジニアに転職成功している、実績豊富なプログラミングスクール。優秀なレビュアー陣と実践的なカリキュラムで、現場で求められる開発スキルを身につけることが可能です。
-                </p>
-                <p class="button_link">
-                    ABOUT<br>
-                    初めての方へ
-                </p>
+                <div class="content__main">
+                    <h1 class="content__heading">POTEPAN CAMP<span class="content__heading--smaller">とは</span></span>
+                    </h1>
+                    <p>
+                        卒業生の多くがWebエンジニアに転職成功している、
+                        実績豊富なプログラミングスクール。優秀なレビュアー陣と
+                        実践的なカリキュラムで、現場で求められる開発スキルを身につけることが可能です。
+                    </p>
+                </div>
+                <div class="content__side">
+
+                    <div class="highlight_link__wrapper ">
+                        <p
+                            class="highlight_link__item highlight_link__item--2_paragraphs highlight_link__item--invert_color">
+                            ABOUT<br>
+                            初めての方へ
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="features">
-            <div class="container">
-                <h1>
-                    POTEPAN CAMPの特徴
-                </h1>
-                <p>POTEPAN CAMPが選ばれる理由</p>
+            <div class="container container--text_center">
+                <div class="heading_wrapper">
+                    <h1 class="content__heading">
+                        POTEPAN CAMPの特徴
+                    </h1>
+                    <p>POTEPAN CAMPが選ばれる理由</p>
+                </div>
                 <ol>
                     <li>
-                        <section>
-                            <span>01</span>
-                            <h2>豊富な転職実績</h2>
-                            <p>
-                                転職サポート希望者の多くが Web系エンジニアとして転職成功しております。
-                                10000人以上の利用者を抱える転職サポートサービスを運営する当社だからこそ、
-                                企業の求めている人材像に即した教育カリキュラムを反映できます。
-                            </p>
-                            <section>
-                                <h3>転職先の例</h3>
-                                <div id="display_example_companies" class="">
-                                    <img class="example_companies" src="images/example-company01.png" alt="株式会社オウチーノ">
-                                    <img class="example_companies" src="images/example-company02.png" alt="株式会社IBJ">
-                                    <img class="example_companies" src="images/example-company03.png"
-                                        alt="株式会社Ready for">
-                                    <img class="example_companies" src="images/example-company04.png"
-                                        alt="株式会社Sakura internet">
-                                    <img class="example_companies" src="images/example-company05.png" alt="株式会社Jiraffe">
-                                    <img class="example_companies" src="images/example-company06.png"
-                                        alt="株式会社any door.">
-                                    <img class="example_companies" src="images/example-company07.png"
-                                        alt="Bit Star inc.">
-                                    <img class="example_companies" src="images/example-company08.png"
-                                        alt="iDoctor inc.">
-                                </div>
-                            </section>
+                        <section class="features__item">
+                            <span class="features__index">01</span>
+                            <div class="features__lead">
+                                <h2 class="features__heading">豊富な転職実績</h2>
+                                <p>
+                                    転職サポート希望者の多くが Web系エンジニアとして転職成功しております。
+                                    10000人以上の利用者を抱える転職サポートサービスを運営する当社だからこそ、
+                                    企業の求めている人材像に即した教育カリキュラムを反映できます。
+                                </p>
+                            </div>
+
+                            <div id="exmaple_companies" class="board">
+                                <h3 class="example_companies__heading">転職先の例<img class="heading__image"
+                                        src="images/desc-list-example-title.png " alt=""></h3>
+                                <ul id="example_companies__list" class="display__list display--flex">
+                                    <li>
+                                        <img class="example_company_logo" src="images/example-company01.png"
+                                            alt="株式会社オウチーノ">
+                                    </li>
+                                    <li>
+                                        <img class="example_company_logo" src="images/example-company02.png"
+                                            alt="株式会社IBJ">
+                                    </li>
+                                    <li>
+                                        <img class="example_company_logo" src="images/example-company03.png"
+                                            alt="株式会社Ready for">
+                                    </li>
+                                    <li>
+                                        <img class="example_company_logo" src="images/example-company04.png"
+                                            alt="株式会社Sakura internet">
+                                    </li>
+                                    <li>
+                                        <img class="example_company_logo" src="images/example-company05.png"
+                                            alt="株式会社Jiraffe">
+                                    </li>
+                                    <li>
+                                        <img class="example_company_logo" src="images/example-company06.png"
+                                            alt="株式会社any door.">
+                                    </li>
+                                    <li>
+                                        <img class="example_company_logo" src="images/example-company07.png"
+                                            alt="Bit Star inc.">
+                                    </li>
+                                    <li>
+                                        <img class="example_company_logo" src="images/example-company08.png"
+                                            alt="iDoctor inc.">
+                                    </li>
+                                </ul>
+                            </div>
                         </section>
                     </li>
                     <li>
-                        <section>
-                            <span>02</span>
-                            <h2>多くの受講者受け入れ実績</h2>
-                            <p>サービス開始以降、累計<em>550</em>人以上がポテパンキャンプを受講。</p>
-                            <figure id="display_charts">
+                        <section class="features__item">
+                            <span class="features__index">02</span>
+                            <h2 class="features__heading">多くの受講者受け入れ実績</h2>
+                            <p>サービス開始以降、累計<em class="text--emphasize">550</em>人以上がポテパンキャンプを受講。</p>
+                            <figure id="charts" class="charts board">
                                 <img src="images/example-data01.png" alt="2019年9月現在309人受講">
                                 <img src="images/example-data02.png" alt="受講生約90%が20代">
                                 <img src="images/example-data03.png" alt="受講生約90%が未経験者">
@@ -121,19 +172,19 @@
                         </section>
                     </li>
                     <li>
-                        <section>
-                            <span>03</span>
-                            <h2>現役エンジニアが講師</h2>
+                        <section class="features__item">
+                            <span class="features__index">03</span>
+                            <h2 class="features__heading">現役エンジニアが講師</h2>
                             <p>サービス開始以降、<em>50</em>人以上の現役エンジニアが講師として活躍中。</p>
-                            <div id="display_mentors">
-                                <div class="mentor_feature">
-                                    <div>
-                                        <img class="menter_image" src="images/engineer-conpany-logo01.png"
-                                            alt="株式会社groovesのロゴマーク">
+                            <div id="display_mentors" class="display--flex">
+                                <div class="mentor_feature board">
+                                    <div class="mentor_company_logo__wrapper">
+                                        <img src="images/engineer-conpany-logo01.png" alt="株式会社groovesのロゴマーク">
                                     </div>
 
                                     <div class="mentor_heading">
-                                        <img src="images/engineer-logo01.png" alt="水辺に立つ人"">
+                                        <img class="mentor_image thumbnail" src="images/engineer-logo01.png"
+                                            alt="水辺に立つ人"">
 
                                         <div>
                                             <p>株式会社grooves</p>
@@ -142,7 +193,7 @@
 
 
                                     </div>
-                                    <div class=" mentors_message">
+                                    <div class=" mentors_message balloon">
                                         現場のように細かくレビューしていきますので、
                                         ただ動くだけではなく、保守性の高いコードが書けるように
                                         一緒に頑張っていきましょう。
@@ -150,13 +201,14 @@
 
                                 </div>
 
-                                <div class="mentor_feature">
-                                    <div>
+                                <div class="mentor_feature board">
+                                    <div class="mentor_company_logo__wrapper">
                                         <img src="images/engineer-conpany-logo02.png" alt="freee株式会社ロゴマーク">
                                     </div>
 
                                     <div class="mentor_heading">
-                                        <img class="menter_image" src="images/engineer-logo02.png" alt="眼鏡をかけた若い男性">
+                                        <img class="mentor_image thumbnail" src="images/engineer-logo02.png"
+                                            alt="眼鏡をかけた若い男性">
 
                                         <div>
                                             <p>株式会社freee</p>
@@ -165,7 +217,7 @@
 
 
                                     </div>
-                                    <div class="mentors_message">
+                                    <div class="mentors_message balloon">
                                         現役Webエンジニアにレビューしてもらえる機会は貴重です。
                                         貰ったフィードバックをしっかりと身につけて自分の糧にして
                                         いきましょう。
@@ -173,14 +225,15 @@
 
                                 </div>
 
-                                <div class="mentor_feature">
-                                    <div>
-                                        <img class="mentor_companie_log" src="images/example-company03.png"
+                                <div class="mentor_feature board">
+                                    <div class="mentor_company_logo__wrapper">
+                                        <img class="mentor_companie_log" src="images/engineer-conpany-logo03.png"
                                             alt="mentor_companie_log">
                                     </div>
 
                                     <div class="mentor_heading">
-                                        <img class="menter_image" src="images/engineer-logo03.png" alt="犬のぬいぐるみ">
+                                        <img class="mentor_image thumbnail" src="images/engineer-logo03.png"
+                                            alt="犬のぬいぐるみ">
 
                                         <div>
                                             <p>株式会社ReadyFor</p>
@@ -189,7 +242,7 @@
 
 
                                     </div>
-                                    <div class="mentors_message">
+                                    <div class="mentors_message balloon">
                                         プログラミングの上達には根気強くプログラミングを書くしかありません。
                                         わからない点はサポートしますので一緒に頑張っていきましょう。
                                     </div>
@@ -291,7 +344,7 @@
                 <div>
                     <a href="">
                         <div>
-                            <img src="images/かたむらさん.jpg" alt="黒いシャツの若い男性">
+                            <img class="interviewee_image" src="images/かたむらさん.jpg" alt="黒いシャツの若い男性">
                             <p>選抜クラスビギナーコース</p>
                             <p>K.Kさん</p>
                             <p>前職：海運勤務</p>
@@ -305,7 +358,7 @@
                 <div>
                     <a href="">
                         <div>
-                            <img src="images/武野さん.jpg" alt="髪の毛の毛量が多い若い男性">
+                            <img class="interviewee_image" src="images/武野さん.jpg" alt="髪の毛の毛量が多い若い男性">
                             <p>選抜クラスビギナーコース</p>
                             <p>K.Kさん</p>
                             <p>前職：海運勤務</p>
@@ -319,7 +372,7 @@
                 <div>
                     <a href="">
                         <div>
-                            <img src="images/川渕さん.jpg" alt="目鼻立ちがきりっとした若い男性">
+                            <img class="interviewee_image" src="images/川渕さん.jpg" alt="目鼻立ちがきりっとした若い男性">
                             <p>選抜クラスビギナーコース</p>
                             <p>K.Kさん</p>
                             <p>前職：海運勤務</p>
@@ -342,34 +395,37 @@
         <!-- students_feedbacks -->
 
         <section id="other_survice">
-            <h1>POTEPANが運用するサービス</h1>
-            <p>ポテパンのサイトをチェック</p>
-            <ul>
-                <li>
-                    <a href="">
-                        <div class="banner">
-                            <img src="images/service-media-thumbnail01.png" alt="ポテパンフリーランスのロゴマーク">
-                        </div>
-                        <p>ポテパンフリーランスは、フリーランス初心者のエンジニアに案件情報を紹介するサービスです</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="banner">
-                            <img src="images/service-media-thumbnail02.png" alt="ポテパンキャリアのロゴマーク">
-                        </div>
-                        <p>ポテパンフリーランスは、フリーランス初心者のエンジニアに案件情報を紹介するサービスです</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="banner">
-                            <img src="images/service-media-thumbnail04.png" alt="働くエンジニアマガジン、ポテパンスタイルのロゴマーク">
-                        </div>
-                        <p>ポテパンフリーランスは、フリーランス初心者のエンジニアに案件情報を紹介するサービスです</p>
-                    </a>
-                </li>
-            </ul>
+            <div class="container">
+                <h1>POTEPANが運用するサービス</h1>
+                <p>ポテパンのサイトをチェック</p>
+                <ul>
+                    <li>
+                        <a href="">
+                            <div class="banner">
+                                <img src="images/service-media-thumbnail01.png" alt="ポテパンフリーランスのロゴマーク">
+                            </div>
+                            <p>ポテパンフリーランスは、フリーランス初心者のエンジニアに案件情報を紹介するサービスです</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="banner">
+                                <img src="images/service-media-thumbnail02.png" alt="ポテパンキャリアのロゴマーク">
+                            </div>
+                            <p>ポテパンフリーランスは、フリーランス初心者のエンジニアに案件情報を紹介するサービスです</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="banner">
+                                <img src="images/service-media-thumbnail04.png" alt="働くエンジニアマガジン、ポテパンスタイルのロゴマーク">
+                            </div>
+                            <p>ポテパンフリーランスは、フリーランス初心者のエンジニアに案件情報を紹介するサービスです</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- container -->
         </section>
         <!-- other_survice -->
     </article>
@@ -408,7 +464,11 @@
                     <li><a href="">INTERVIEW<br>受講者の声</a></li>
                     <li><a href="">FAQ<br>良くある質問</a></li>
                     <li><a href="">COMPANY<br>会社概要</a></li>
-                    <li><a class="button_link" href="">無料カウンセリング</a></li>
+                    <li>
+                        <div class="highlight_link__wrapper">
+                            <a class="highlight_link__item" href="">無料カウンセリング</a>
+                        </div>
+                    </li>
                 </ul>
             </nav>
             <img src="images/footer-potepanda.png" alt="ポテパンダ">
