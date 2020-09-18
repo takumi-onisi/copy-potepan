@@ -33,6 +33,7 @@ li {
 .board {
     background-color: white;
     padding: 20px;
+    margin-bottom: 50px;
 }
 
 .text--emphasize {
@@ -287,7 +288,7 @@ li {
 }
 
 .mentor_feature {
-    padding: 40px 20px;
+    padding: 20px;
     margin: 30px auto;
     max-width: 200px;
 }
@@ -332,4 +333,28 @@ li {
     border-style: solid;
     border-width: 0 15px 15px 15px;
     border-color: transparent transparent rgb(230, 230, 230) transparent;
+}
+
+.courses__container {
+    background-color: rgb(230, 230, 230);
+    background-image: url("images/bg-section-top-course.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-clip: padding-box;
+}
+
+.course__heading {
+    width: 25%;
+    margin: 20px;
+    padding: 5px;
+}
+
+.course__body {
+    text-align: left;
+    width: 68%;
+    padding: 5px;
+}
+
+.course__link_wrapper {
+    text-align: right;
 }
