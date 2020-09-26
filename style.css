@@ -344,11 +344,17 @@ li {
 }
 
 .course__heading {
-    width: 25%;
     margin: 20px;
     padding: 5px;
 }
 
+.course__heading_wrapper {
+    padding: 0 20px;
+    width: 25%;
+    position: relative;
+    left: -40px;
+    border: solid 5px red;
+}
 .course__body {
     text-align: left;
     width: 68%;
