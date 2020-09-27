@@ -344,17 +344,29 @@ li {
 }
 
 .course__heading {
-    margin: 20px;
-    padding: 5px;
+    
 }
 
 .course__heading_wrapper {
-    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 20px;
     width: 25%;
     position: relative;
     left: -40px;
     border: solid 5px red;
 }
+.course--career .course__heading_wrapper {
+    border: solid 3px #f73614;
+}
+.course--beginner .course__heading_wrapper {
+    border: solid 3px #38e463;
+}
+.course--open .course__heading_wrapper {
+    border: solid 3px #f79314;
+}
+
 .course__body {
     text-align: left;
     width: 68%;
@@ -363,4 +375,73 @@ li {
 
 .course__link_wrapper {
     text-align: right;
+}
+
+.course__heading--2_paragraphs {
+    margin: 10px 20px;
+}
+
+.course__text--highright {
+    display: inline-block;
+    font-size: 14px;
+    padding: 4px 16px 2px 16px;
+    background-color: #f79314;
+    border-radius: 45px;
+    text-align: center;
+    color: white;   
+}
+
+.course--career .course__heading .course__text--highright{
+    background-color: #f73614;
+}
+.course--beginner .course__heading .course__text--highright{
+    background-color: #38e463;
+}
+
+.course__body .course__text--highright {
+    margin-bottom: 14px;
+    display: inline-block;
+    font-size: 14px;
+    padding: 4px 24px 2px 24px;
+    background-color: #3a3a3a;
+    border-radius: 45px;
+    text-align: center;
+    color: white;   
+}
+
+.course__body .body__lead {
+    margin-bottom: 16px;
+}
+.course--career .course__body .body__lead{
+    color: #f73614;
+}
+.course--beginner .course__body .body__lead{
+    color: #38e463;
+}
+.course--open .course__body .body__lead{
+    color: #f79314;
+}
+
+.course__body .list__item::before {
+    display: inline-block;
+    position: relative;
+    left: -5px;
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #f79314;
+}
+
+.course__body .link {
+    font-size: 14px;
+    color: #929292;
+}
+
+.course__body .link::after {
+    display: inline-block;
+    position: relative;
+    left: 5px;
+    content: ">";
+    color: #f79314;
 }
