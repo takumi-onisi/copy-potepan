@@ -12,6 +12,9 @@ body {
 a {
     text-decoration-line: none;
 }
+ul {
+    padding-inline-start: 0;
+}
 
 /* global */
 li {
@@ -57,7 +60,7 @@ li {
 }
 
 .heading_wrapper{
-    margin-bottom: 10px;
+    margin-bottom: 60px;
     position: relative;
 }
 
@@ -336,7 +339,11 @@ li {
 }
 
 .courses__container {
+    /* padding: 40px; */
     background-color: rgb(230, 230, 230);
+    
+}
+.show_courses .heading_wrapper {
     background-image: url("images/bg-section-top-course.png");
     background-repeat: no-repeat;
     background-position: right;
@@ -444,4 +451,45 @@ li {
     left: 5px;
     content: ">";
     color: #f79314;
+}
+
+.message {
+    background-color: rgb(245 245 242);
+}
+
+.message .container__inner {
+    padding-top: 40px;
+    background-color: white;
+    position: relative;
+    max-width: 700px;
+}
+
+.message .inner__heading {
+    position: absolute;
+    top: -34px;
+    font-size: 52px;
+    color: #f79314;
+}
+
+.message .display--flex {
+    flex-direction: row-reverse;
+}
+
+
+
+.message .display__item--right {
+    position: absolute;
+    top: 60px;
+    right: -280px;
+}
+
+.message .text__wrapper {
+    display: inline-block;
+    max-width: 560px;
+} 
+
+.message .text {
+    line-height: 28px;
+    font-size: 14px;
+    margin-bottom: 40px;
 }
