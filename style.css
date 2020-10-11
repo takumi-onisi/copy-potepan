@@ -20,6 +20,8 @@ ul {
 li {
     list-style: none;
 }
+
+/* コンテナ関連 */
 .container {
     width: 1000px;
     margin: 0 auto;
@@ -39,16 +41,11 @@ li {
     margin-bottom: 50px;
 }
 
-.text--emphasize {
-    font-size: 32px;
-    font-weight: bold;
-    color: #f79314;
-}
-
 .padding--none {
     padding: 0;
 }
 
+/* 画面のレイアウト */
 .display--flex {
     display: flex;
     /* flex-direction: row; */
@@ -59,6 +56,13 @@ li {
     grid-template-columns: 200px 200px 200px 200px; */
 }
 
+.text--emphasize {
+    font-size: 32px;
+    font-weight: bold;
+    color: #f79314;
+}
+
+/* 見出し関連 */
 .heading_wrapper{
     margin-bottom: 60px;
     position: relative;
@@ -97,6 +101,7 @@ li {
     font-size: 36px;
 }
 
+/* ヘッダー */
 #header {
     padding-top: 15px;
     height: 80px;
@@ -183,9 +188,7 @@ li {
     top: 168px;
 }
 
-.interviewee_image {
-    width: 300px;
-}
+
 #badge_number1 {
  float: right;
 }
@@ -200,7 +203,7 @@ li {
     color: silver;
 }
 
-
+/* リンク関連 */
 .highlight_link__item {
     display: inline-block;
     background-color: #f79314;
@@ -492,4 +495,70 @@ li {
     line-height: 28px;
     font-size: 14px;
     margin-bottom: 40px;
+}
+
+/* 受講生の声のエリア */
+.students_feedbacks .display--flex{
+    justify-content: space-between;
+}
+
+.students_feedbacks .card {
+    width: 300px;
+}
+
+.students_feedbacks .card__display {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.students_feedbacks .card__image {
+    width: 400px;
+    position: relative;
+    left: -50px;
+}
+.students_feedbacks .card__image:hover{
+    transform: scale(1.12,1.12);
+    position: relative;
+    left: -50px;
+    transition: 0.3s;
+}
+
+.students_feedbacks .card__title {
+    box-sizing: border-box;
+    padding: 50px 10px 10px 10px;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.students_feedbacks .heading .heading__text--main {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f79314;
+    border-bottom: solid white 1px;
+    margin-bottom: 5px;
+}
+
+.students_feedbacks .heading .heading__text--sub {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.students_feedbacks .heading .heading__text--sub .heading__text--small {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.students_feedbacks .card__text {
+    padding: 10px 0;
+    font-size: 15px;
 }
