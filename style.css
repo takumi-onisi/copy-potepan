@@ -12,6 +12,9 @@ body {
 a {
     text-decoration-line: none;
 }
+a:visited{
+    color: black;
+}
 ul {
     padding-inline-start: 0;
 }
@@ -45,11 +48,25 @@ li {
     padding: 0;
 }
 
+/* カード */
+.card {
+    box-sizing: border-box;
+}
+.card__image {
+    width: 100%;
+}
+.card__text {
+    margin-top: 16px;
+    padding: 8px 0;
+    font-size: 15px;
+    line-height: 2;
+}
+
 /* 画面のレイアウト */
 .display--flex {
     display: flex;
-    /* flex-direction: row; */
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .display--grid {
     /* display: grid;
@@ -113,7 +130,6 @@ li {
 
 .global_nav {
  float: right;
- width: 800px;
 }
 
 .global_nav__list {
@@ -211,6 +227,9 @@ li {
     text-align: center;
     padding: 18px 5px;
     width: 330px;
+    color: white;
+}
+.highlight_link__item:visited{
     color: white;
 }
 .highlight_link__item--2_paragraphs {
@@ -497,9 +516,14 @@ li {
     margin-bottom: 40px;
 }
 
-/* 受講生の声のエリア */
-.students_feedbacks .display--flex{
+
+
+/* エリア：受講生の声 */
+/* .students_feedbacks .display--flex{
     justify-content: space-between;
+} */
+.students_feedbacks .board {
+    padding: 20px 0;
 }
 
 .students_feedbacks .card {
@@ -561,4 +585,44 @@ li {
 .students_feedbacks .card__text {
     padding: 10px 0;
     font-size: 15px;
+}
+
+
+/* エリア：その他のサービス */
+.other_service {
+    background-color: #f6f6f6;
+}
+
+.other_service .board {
+    padding: 20px 0;
+    background-color: transparent;
+}
+
+.other_service .card{
+    width: 300px;
+}
+
+.other_service .card__display {
+    background-color: white;
+    padding: 50px 20px 20px;
+    height: 180px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    border: #f79314 solid 2px;
+    overflow: hidden;
+}
+
+.other_service .card__display--potepan_freelance {
+    border-color: #f79314;
+}
+.other_service .card__display--potepan_career {
+    border-color: #38e463;
+}
+.other_service .card__display--potepan_style {
+    border-color: #333333;
+}
+
+.other_service .card__image:hover {
+    transform: scale(1.05,1.05);
+    transition: 0.3s;
 }
