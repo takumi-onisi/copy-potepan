@@ -12,7 +12,7 @@
 <body>
     <div id="top"></div>
     <section id="top_hero">
-        <header id="header" class="header">
+        <header class="header" id="header" class="header">
             <div class="container header__container">
                 <h1 id="top_logo__wrapper" class="top_logo__wrapper">
                     <a href="/">
@@ -86,7 +86,7 @@
                         実践的なカリキュラムで、現場で求められる開発スキルを身につけることが可能です。
                     </p>
                 </div>
-                <div class="content__side">
+                <div class="content__sub">
 
                     <div class="highlight_link__wrapper ">
                         <p
@@ -344,7 +344,7 @@
                     <h1 class="content__heading">サービスの想い</h1>
                     <p>ポテパンのプログラミング学習についてかける想い</p>
                 </div>
-                <section class="container__inner">
+                <section class="board">
                     <h2 class="inner__heading">MESSAGE</h2>
 
                     <img class=" display__item--right " src="images/message-thumbnail.png" alt="ポテパンの代表。カジュアルな格好の若い男性">
@@ -492,48 +492,61 @@
         <!-- other_service -->
     </article>
 
-    <footer>
-        <div>
-            <a href="#top"></a>
-        </div>
+    <footer class="footer">
         <div class="container">
-            <address id="company_address">
-                <img src="images/footer-logo.png" alt="company_logo">
-                <p>株式会社ポテパン</p>
-                <p>
-                    〒150-0002<br>
-                    東京都渋谷区渋谷2－2－5<br>
-                    クルスビル7階<br>
-                </p>
-            </address>
-            <div id="social_link">
-                <div>
-                    <a href="">
-                        <img src="images/footer-social-facebook.png" alt="faceBookのロゴマーク">
-                    </a>
+            <div>
+                <a class="link--to_top button--round" href="#top" alt="ページトップへ">^</a>
+            </div>
+            <div class="board">
+                <div class="board__container--main">
+
+                    <div class="board__item--left">
+
+                        <address id="company_address" class="address">
+                            <img class="company_logo" src="images/footer-logo.png" alt="company_logo">
+                            <p class="address__text">株式会社ポテパン</p>
+                            <p class="address__text">
+                                〒150-0002<br>
+                                東京都渋谷区渋谷2－2－5<br>
+                                クルスビル7階<br>
+                            </p>
+                        </address>
+                        <div class="social_link" id="social_link">
+                            <a href="">
+                                <img class="social_link__image" src="images/footer-social-facebook.png"
+                                    alt="faceBookのロゴマーク">
+                            </a>
+                            <a href="">
+                                <img class="social_link__image" src="images/footer-social-twitter.png"
+                                    alt="twitterのロゴマーク">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="board__item--right">
+
+                        <nav class="global_nav" id="site_nav">
+                            <ul class="global_nav__list">
+                                <li><a href="">ABOUT<span class="global_nav__text--inline_block">初めての方へ</span></a></li>
+                                <li><a href="">FLOW<span class="global_nav__text--inline_block">卒業までの流れ</span></a></li>
+                                <li><a href="">COURSE<span class="global_nav__text--inline_block">コース・料金</span></a></li>
+                                <li><a href="">INTERVIEW<span class="global_nav__text--inline_block">受講者の声</span></a>
+                                </li>
+                                <li><a href="">FAQ<span class="global_nav__text--inline_block">良くある質問</span></a></li>
+                                <li><a href="">COMPANY<span class="global_nav__text--inline_block">会社概要</span></a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-                <div>
-                    <a href="">
-                        <img src="images/footer-social-twitter.png" alt="twitterのロゴマーク">
-                    </a>
+
+                <div class="board__container--sub">
+
+                    <div class="board__item--right">
+                        <img class="mascot_image" src="images/footer-potepanda.png" alt="ポテパンダ（ポテパンキャンプのマスコットキャラクター）">
+                    </div>
                 </div>
             </div>
-            <nav id="site_nav">
-                <ul>
-                    <li><a href="">ABOUT<br>初めての方へ</a></li>
-                    <li><a href="">FLOW<br>卒業までの流れ</a></li>
-                    <li><a href="">COURSE<br>コース・料金</a></li>
-                    <li><a href="">INTERVIEW<br>受講者の声</a></li>
-                    <li><a href="">FAQ<br>良くある質問</a></li>
-                    <li><a href="">COMPANY<br>会社概要</a></li>
-                    <li>
-                        <div class="highlight_link__wrapper">
-                            <a class="highlight_link__item" href="">無料カウンセリング</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-            <img src="images/footer-potepanda.png" alt="ポテパンダ">
+
             <p id="copyright">©2016-2019 POTEPAN.INC.</p>
         </div>
     </footer>
